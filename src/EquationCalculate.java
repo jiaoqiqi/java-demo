@@ -18,7 +18,7 @@ public class EquationCalculate {
         } else if (q == 0) {
             double r = (-b + q) / (2 * a);
             System.out.println("The roots is " + r);
-        } else if (q < 0) {
+        } else{
             System.out.println("The equation has no real roots");
         }
     }
