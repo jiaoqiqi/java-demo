@@ -15,16 +15,14 @@ class  Trangle {
     double z = Math.sqrt((y3-y2)*(y3-y2) + (x3-x2)*(x3-x2));
 
 
-    public boolean check()
-    {
+    public boolean check() {
         if (x+y>z&&x-y<z)
             return true;
         else
             return false;
     }
 
-    public void Area()//计算面积并负责输出面积
-    {
+    public void Area() {
         double p;
         double s;
         p=(x+y+z)/2;
@@ -34,20 +32,16 @@ class  Trangle {
     }
 
 }
-public class TriangleArea
-{
-    public static void main(String[] args)
-    {
+
+public class TriangleArea {
+    public static void main(String[] args) {
         System.out.print("Enter three points for a triangle");
 
         Trangle trangle=new Trangle();
-        if (trangle.check()==true)
-        {
+        if (trangle.check() == true) {
 
             trangle.Area();
-        }
-        else
-        {
+        } else {
             System.out.println("wrong input");
         }
 
