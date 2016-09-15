@@ -36,9 +36,9 @@ public class Account {
         Account account = new Account();
         account.setId(1122);
         account.setBalance(20000);
-        account.setAnnualInterestRate(4.5);
+        account.setAnnualInterestRate(4.);
         Date dateCreated = new Date();
-        System.out.println(" The id is" + account.getId());
+        System.out.println(" The id is " + account.getId());
         System.out.println(" The balance is " + account.getNewBalance());
         System.out.println(" The rate is " + account.getMonthInterestRate()+"%");
         System.out.println(" The date is " + dateCreated.toString());
