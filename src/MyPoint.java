@@ -30,7 +30,7 @@ public class MyPoint {
 
         MyPoint first = new MyPoint();
 
-        MyPoint newPoint = new MyPoint();
+        MyPoint newPoint = new MyPoint(6,8);
         newPoint.setX(6);
         newPoint.setY(8);
         newPoint.getX();
