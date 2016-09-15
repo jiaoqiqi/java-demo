@@ -4,7 +4,8 @@ public class Stock{
     double previousClosingPrice;
     double currentPrice;
 
-    public Stock(String mySymbol, String myName,double myPreviousClosingPrice,double myCurrentPrice) {
+    public Stock(String mySymbol, String myName,double myPreviousClosingPrice,
+                 double myCurrentPrice) {
         symbol = mySymbol;
         name = myName;
         previousClosingPrice = myPreviousClosingPrice;
@@ -25,7 +26,7 @@ public class Stock{
     }
 
     public static void main(String[] args) {
-        Stock stock = new Stock("Java", "Sun Microsystems Inc",4.5,4.35);
+        Stock stock = new Stock("Java", "Sun Microsystems Inc",4.6,4.54);
         double d = stock.getChangePercent();
         System.out.println( stock.getSymbol() +" " +stock.getName() + " 价格浮动：" + String.format("%.2f",d)+ "%");
     }
