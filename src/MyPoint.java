@@ -10,19 +10,24 @@ public class MyPoint {
         this.y = y;
     }
 
-    public double getX() {
+    public double getX()
+    {
         return x;
     }
-    public void setX(double x) {
+    public void setX(double x)
+    {
         this.x = x;
     }
-    public double getY() {
+    public double getY()
+    {
         return y;
     }
     public void setY(double y) {
+
         this.y = y;
     }
     public double distance(MyPoint I,MyPoint B){
+
         return Math.sqrt((I.x-B.x)*(I.x-B.x)+(I.y-B.y)*(I.y-B.y));
     }
 
@@ -30,14 +35,14 @@ public class MyPoint {
 
         MyPoint first = new MyPoint();
 
-        MyPoint newPoint = new MyPoint(6,8);
-        newPoint.setX(6);
-        newPoint.setY(8);
-        newPoint.getX();
-        newPoint.getY();
+        MyPoint second = new MyPoint(6,8);
+        second.setX(6);
+        second.setY(8);
+        second.getX();
+        second.getY();
 
         MyPoint pointDis=new MyPoint();
-        double pointDistance=pointDis.distance(first,newPoint);
+        double pointDistance=pointDis.distance(first,second);
         System.out.println("距离为");
         System.out.println(pointDistance);
 
