@@ -1,6 +1,6 @@
 public class MyInteger{
 
-     int value;
+    int value;
 
     public MyInteger(int n){
         this.value=n;
@@ -68,12 +68,12 @@ public class MyInteger{
         return this.value == integer.getValue();
     }
 
-    int parseInt(String s) {
-        return Integer.valueOf(s);
-    }
 
     int parseInt(char[] c) {
         return Integer.valueOf(new String(c));
+    }
+    int parseInt(String s){
+        return Integer.parseInt(s);
     }
 
     public static void main(String []args){
@@ -121,8 +121,8 @@ public class MyInteger{
         else
             System.out.println(mInt.value+"!="+nInt.value);
 
-        int n1=mInt.parseInt(c);
-        int n2=mInt.parseInt(s);
-        System.out.println("c="+n1+",s="+n2);
+        char[] array = {'1','2','3'};
+        System.out.println(mInt.parseInt("132"));
+        System.out.println(mInt.parseInt(array));
     }
 }
