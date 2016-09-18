@@ -106,14 +106,6 @@ public class MyInteger{
         if(mInt.isPrime(num))
             System.out.println(num+"是素数！");
 
-//        if(nInt.isEven(nInt))
-//            System.out.println("nInt.value是偶数！");
-//
-//        if(nInt.isOdd(nInt))
-//            System.out.println("nInt.value是奇数！");
-//        if(nInt.isPrime(nInt))
-//            System.out.println("nInt.value是素数！");
-
         if(mInt.equals(num))
             System.out.println(mInt.value+"="+num);
         else
