@@ -44,11 +44,11 @@ public class Circle2D {
         Circle2D c1 = new Circle2D();
         c1.getArea();
         c1.getPerimeter();
-        c1.contains(3,3);
+        c1.contains(5,2);
 
-        Circle2D c2 = new Circle2D(4,5,10.5);
+        Circle2D c2 = new Circle2D(8,5,10.5);
         c1.contains(c2);
-        Circle2D c3 = new Circle2D(3,5,2.3);
+        Circle2D c3 = new Circle2D(0,0,0.5);
         c1.contains(c3);
 
 
@@ -56,7 +56,7 @@ public class Circle2D {
         System.out.println("周长： " + c1.getPerimeter());
         System.out.println("点在圆内吗： " + c1.contains(3,3));
         System.out.println("c2在圆内吗： " + c1.contains(c2));
-        System.out.println("c3与c1重叠吗吗： " + c1.overlaps(c3));
+        System.out.println("c3与c1重叠吗： " + c1.overlaps(c3));
 
     }
 }

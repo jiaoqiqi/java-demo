@@ -35,15 +35,15 @@ public class MyPoint {
 
         MyPoint first = new MyPoint();
 
-        MyPoint second = new MyPoint(6,8);
-        second.setX(6);
-        second.setY(8);
+        MyPoint second = new MyPoint(10,30.5);
+        second.setX(10);
+        second.setY(30.5);
         second.getX();
         second.getY();
 
         MyPoint pointDis=new MyPoint();
         double pointDistance=pointDis.distance(first,second);
-        System.out.println("距离为");
+        System.out.print("两点之间距离为： ");
         System.out.println(pointDistance);
 
     }

@@ -22,6 +22,8 @@ public class MyInteger{
         return myInteger.getValue() % 2 == 0;
     }
 
+
+
     boolean isOdd(int value) {
         return value % 2 == 1;
     }
@@ -78,11 +80,9 @@ public class MyInteger{
 
     public static void main(String []args){
 
-        MyInteger mInt=new MyInteger(3);
-        MyInteger nInt=new MyInteger(4);
-        int num=4;
-        char[] c={1,2,3};
-        String s="12345";
+        MyInteger mInt=new MyInteger(9093);
+        MyInteger nInt=new MyInteger(7346);
+        int num=3;
 
         System.out.println("mInt.getValue()="+mInt.getValue());
         System.out.println("nInt.getValue()="+nInt.getValue());
@@ -121,8 +121,8 @@ public class MyInteger{
         else
             System.out.println(mInt.value+"!="+nInt.value);
 
-        char[] array = {'1','2','3'};
-        System.out.println(mInt.parseInt("132"));
+        char[] array = {'1','2','3','4'};
+        System.out.println(mInt.parseInt("42"));
         System.out.println(mInt.parseInt(array));
     }
 }
