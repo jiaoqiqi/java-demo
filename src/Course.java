@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class Course {
 
     private String courseName;
-    ArrayList<String> students = new ArrayList<>();
+    ArrayList<String> students = new ArrayList();
     
     private int numberOfStudents;
 
