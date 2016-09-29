@@ -1,7 +1,10 @@
-package PACKAGE_NAME;
-
-/**
- * Created by monster on 16-9-28.
- */
 public class DeleteUseBuilder {
+    public static void main(String[] args) {
+
+        StringBuilder str = new StringBuilder("1234abcdef1234567890");
+        System.out.println("string = " + str);
+
+        str.delete(4, 10);
+        System.out.println("After deletion :" + str);
+    }
 }
