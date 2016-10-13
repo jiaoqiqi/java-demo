@@ -3,7 +3,6 @@ public class NumberOrABC {
     public static boolean isNumeric(String str){
         for (int i = str.length();--i>=0;){
             if (!Character.isLetterOrDigit(str.charAt(i))){
-//                Character.isLetterOrDigit( char ch )
                 return false;
             }
         }
@@ -16,12 +15,12 @@ public class NumberOrABC {
 //    }
 
     public static void main(String []args){
-        String a = "abc";
+        String a = " []";
         System.out.println(a+" "+isNumeric(a));
 
-        String s1 = "Welcome to Java";
-        String s2 = s1.replace("o","abc");
-        System.out.println(s1);
-        System.out.println(s2);
+//        String s1 = "Welcome to Java";
+//        String s2 = s1.replace("o","abc");
+//        System.out.println(s1);
+//        System.out.println(s2);
     }
 }
