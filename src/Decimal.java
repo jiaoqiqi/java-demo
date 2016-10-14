@@ -1,21 +1,15 @@
-import java.math.BigDecimal;
+import java.math.*;
 public class Decimal {
-    public static BigDecimal factorial(long n){
-        BigDecimal result = BigDecimal.ONE;
-        for(int i=1 ; i<=n ; i++){
-            result = result.multiply(new BigDecimal(i + ""));
+    public static void main(String[] args){
+        double s=1;
+        double a=1;
+        for(int i=100;i<1001;i+=100){
+            for(int j=1;j<=i;j++){
+                a=a*j;
+                s=s+1/a;
+            }
+            BigDecimal b=new BigDecimal(s);
+            System.out.println(i+" " +"e="+b);
         }
-        return result;
-    }
-    public static void main(String []args){
-        BigDecimal one = new BigDecimal("1");
-        long n = 100;
-        BigDecimal e = new BigDecimal("0");
-        for(int i=0 ; i<n ; i++){
-            BigDecimal result = factorial(n);
-            BigDecimal c = one.divide(result,25,BigDecimal.ROUND_CEILING);
-            e=e.add(c);
-        }
-        System.out.println(e);
     }
 }
