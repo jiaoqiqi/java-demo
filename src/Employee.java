@@ -1,5 +1,5 @@
 import java.io.*;
-public class Employee{
+public class EmployeeDe{
     String name;
     int age;
     String designation;
