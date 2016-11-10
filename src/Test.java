@@ -1,31 +1,16 @@
-package com.runoob.test;
-
+import java.math.BigInteger;
+import java.util.Scanner;
 public class Test{
-    public void pupAge(){
-        int age = 0;    //初始化
-        age = age + 7;
-        System.out.println("小狗的年龄是: " + age);
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        BigInteger b1 = new BigInteger(input.next());
+        int b2 = input.nextInt();
+        for (;b2>0;b1 = b1.add(BigInteger.ONE)){
+            if (b1.isProbablePrime(100)) {
+                System.out.println(b1);
+                --b2;
+            }
+        }
     }
 
-    public static void main(String args[]){
-        Test test = new Test();
-        test.pupAge();
-    }
 }
-
-/*
-public class Test{
-   public void pupAge(){
-      int age;
-      age = age + 7;
-      System.out.println("小狗的年龄是 : " + age);
-   }
-
-   public static void main(String args[]){
-      Test test = new Test();
-      test.pupAge();
-   }
-}
-
-age没有初始化
-*/

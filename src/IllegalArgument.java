@@ -1,15 +1,15 @@
 import java.util.*;
-public class IllegalArgumentException {
+public class IllegalArgument {
     private double annualInterestRate;
     private int numberOfYears;
     private double loanAmount;
     private java.util.Date loanDate;
 
-    public IllegalArgumentException(){
+    public IllegalArgument(){
         this(2.5,1,1000);
     }
 
-    public IllegalArgumentException(double annualInterestRate,int numberOfYears,double getLoanAmount){
+    public IllegalArgument(double annualInterestRate, int numberOfYears, double getLoanAmount){
         this.annualInterestRate = annualInterestRate;
         this.numberOfYears = numberOfYears;
         this.loanAmount = loanAmount;
@@ -41,14 +41,27 @@ public class IllegalArgumentException {
         return loanDate;
     }
 
+    public static boolean judge(double a,int b,double c){
+        if(a<= 0 || b<= 0 || c <= 0){
+            throw new java.lang.IllegalArgumentException();
+        }
+        return  true;
+    }
 
     public static void main(String []args){
         Scanner input = new Scanner(System.in);
         double annualInterestRate = input.nextDouble();
         int numberOfYears = input.nextInt();
         double loanAmount = input.nextDouble();
-        if(annualInterestRate<0 || numberOfYears<0 || loanAmount<0){
-            throw new java.lang.IllegalArgumentException("Wrong Argument");
+
+        try{
+            boolean result = judge(annualInterestRate,numberOfYears,loanAmount);
+            IllegalArgument loan = new IllegalArgument(annualInterestRate, numberOfYears, loanAmount);
+            System.out.println(loan.getAnnualInterestRate());
+            System.out.println(loan.getLoanDate());
+            System.out.println(loan.getNumberOfYears());
+        }catch (IllegalArgumentException e){
+            System.out.println("exception handle");
         }
 
     }
