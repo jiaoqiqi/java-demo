@@ -4,30 +4,30 @@ import javax.swing.border.Border;
 
 
 
-//public class ShowFlowLayout extends JFrame {
-//    public ShowFlowLayout(){
-//        this.setLayout(new FlowLayout());
-//        JPanel p1 = new JPanel();
-//        p1.add(new JButton("button1"));
-//        p1.add(new JButton("button2"));
-//        p1.add(new JButton("button3"));
-//        this.add(p1);
-//
-//        JPanel p2 = new JPanel();
-//        p2.add(new JButton("button4"));
-//        p2.add(new JButton("button5"));
-//        p2.add(new JButton("button6"));
-//        this.add(p2);
-//
-//    }
-//
-//    public static void main(String []args){
-//        ShowFlowLayout frame = new ShowFlowLayout();
-//        frame.setSize(400,250);
-//        frame.setVisible(true);
-//    }
-//
-//}
+public class ShowFlowLayout extends JFrame {
+    public ShowFlowLayout(){
+        this.setLayout(new FlowLayout());
+        JPanel p1 = new JPanel();
+        p1.add(new JButton("button1"));
+        p1.add(new JButton("button2"));
+        p1.add(new JButton("button3"));
+        this.add(p1);
+
+        JPanel p2 = new JPanel();
+        p2.add(new JButton("button4"));
+        p2.add(new JButton("button5"));
+        p2.add(new JButton("button6"));
+        this.add(p2);
+
+    }
+
+    public static void main(String []args){
+        ShowFlowLayout frame = new ShowFlowLayout();
+        frame.setSize(400,250);
+        frame.setVisible(true);
+    }
+
+}
 
 
 
@@ -109,61 +109,63 @@ import javax.swing.border.Border;
 
 
 
-public class ShowFlowLayout{
-    public static void main(String []args){
-        JFrame frame = new JFrame();
-        frame.setLayout(new GridLayout(2,3));
-        frame.setSize(300,200);
-        Font myFont = new Font("TimesRoman",1,20);
-        Border bd = BorderFactory.createLineBorder(Color.YELLOW,1);
-
-        JLabel blo1 = new JLabel("black");
-        blo1.setBorder(bd);
-        blo1.setFont(myFont);
-        blo1.setForeground(Color.BLACK);
-        blo1.setToolTipText("black");
-
-        JLabel blo2 = new JLabel("blue");
-        blo2.setBorder(bd);
-        blo2.setFont(myFont);
-        blo2.setForeground(Color.BLUE);
-        blo2.setToolTipText("blue");
-
-        JLabel blo3 = new JLabel("cyan");
-        blo3.setBorder(bd);
-        blo3.setFont(myFont);
-        blo3.setForeground(Color.CYAN);
-        blo3.setToolTipText("cyan");
-
-        JLabel blo4 = new JLabel("green");
-        blo4.setBorder(bd);
-        blo4.setFont(myFont);
-        blo4.setForeground(Color.GREEN);
-        blo4.setToolTipText("green");
-
-        JLabel blo5 = new JLabel("magenta");
-        blo5.setBorder(bd);
-        blo5.setFont(myFont);
-        blo5.setForeground(Color.MAGENTA);
-        blo5.setToolTipText("magenta");
-
-        JLabel blo6 = new JLabel("orange");
-        blo6.setBorder(bd);
-        blo6.setFont(myFont);
-        blo6.setForeground(Color.ORANGE);
-        blo6.setToolTipText("orange");
-
-        frame.add(blo1);
-        frame.add(blo2);
-        frame.add(blo3);
-        frame.add(blo4);
-        frame.add(blo5);
-        frame.add(blo6);
-        frame.setVisible(true);
 
 
-    }
-}
-
-
-
+//public class ShowFlowLayout{
+//    public static void main(String []args){
+//        JFrame frame = new JFrame();
+//        frame.setLayout(new GridLayout(2,3));
+//        frame.setSize(300,200);
+//        Font myFont = new Font("TimesRoman",1,20);
+//        Border bd = BorderFactory.createLineBorder(Color.YELLOW,1);
+//
+//        JLabel blo1 = new JLabel("black");
+//        blo1.setBorder(bd);
+//        blo1.setFont(myFont);
+//        blo1.setForeground(Color.BLACK);
+//        blo1.setToolTipText("black");
+//
+//        JLabel blo2 = new JLabel("blue");
+//        blo2.setBorder(bd);
+//        blo2.setFont(myFont);
+//        blo2.setForeground(Color.BLUE);
+//        blo2.setToolTipText("blue");
+//
+//        JLabel blo3 = new JLabel("cyan");
+//        blo3.setBorder(bd);
+//        blo3.setFont(myFont);
+//        blo3.setForeground(Color.CYAN);
+//        blo3.setToolTipText("cyan");
+//
+//        JLabel blo4 = new JLabel("green");
+//        blo4.setBorder(bd);
+//        blo4.setFont(myFont);
+//        blo4.setForeground(Color.GREEN);
+//        blo4.setToolTipText("green");
+//
+//        JLabel blo5 = new JLabel("magenta");
+//        blo5.setBorder(bd);
+//        blo5.setFont(myFont);
+//        blo5.setForeground(Color.MAGENTA);
+//        blo5.setToolTipText("magenta");
+//
+//        JLabel blo6 = new JLabel("orange");
+//        blo6.setBorder(bd);
+//        blo6.setFont(myFont);
+//        blo6.setForeground(Color.ORANGE);
+//        blo6.setToolTipText("orange");
+//
+//        frame.add(blo1);
+//        frame.add(blo2);
+//        frame.add(blo3);
+//        frame.add(blo4);
+//        frame.add(blo5);
+//        frame.add(blo6);
+//        frame.setVisible(true);
+//
+//
+//    }
+//}
+//
+//
+//

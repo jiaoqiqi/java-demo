@@ -10,21 +10,21 @@ public class NumberFormatException {
         String a,b;
         int sum=0;
         Scanner input = new Scanner(System.in);
-        System.out.print("please input the first number:");
+//        System.out.print("please input the first number:");
         a = input.next();
-        if(!isInteger(a)){
-            System.out.println("please input the int number");
-        }
+//        if(!isInteger(a)){
+////            System.out.println("please input the int number");
+//        }
         int x=Integer.parseInt(a);
         sum = sum+x;
-        System.out.print("please input the first number:");
+//        System.out.print("please input the first number:");
         b = input.next();
-        if(!isInteger(b)){
-            System.out.println("please input the int number");
+        if(!isInteger(b) || !isInteger(a)){
+            System.out.println("Incorrect input and re-enter two integers:");
         }
         int y=Integer.parseInt(b);
         sum = sum +y;
-        System.out.println(sum);
+        System.out.println("Sum is "+sum);
 
     }
 }
