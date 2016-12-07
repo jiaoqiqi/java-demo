@@ -10,23 +10,21 @@ public class ShowCharacterByMouseSite extends JFrame {
         panel.setFocusable(true);
     }
 
-    /** Main method */
     public static void main(String[] args) {
         JFrame frame = new ShowCharacterByMouseSite();
-        frame.setTitle("Exercise16_11");
+        frame.setTitle("StringSite");
         frame.setSize(300, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLocationRelativeTo(null); // Center the frame
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
     class DisplayPanel extends JPanel {
         private int x = 20;
         private int y = 20;
-        private char keyChar = ' '; // Default key
+        private char keyChar = ' ';
 
         public DisplayPanel() {
-            // Add key listener
             this.addKeyListener(new KeyAdapter() {
                 public void keyPressed(KeyEvent e) {
                     keyChar = e.getKeyChar();
@@ -34,7 +32,6 @@ public class ShowCharacterByMouseSite extends JFrame {
                 }
             });
 
-            // Add mouse motion listener
             this.addMouseMotionListener(new MouseAdapter() {
                 public void mouseMoved(MouseEvent e) {
                     x = e.getX();

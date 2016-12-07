@@ -10,10 +10,10 @@ public class ShowMouseSite extends JFrame {
 
     public static void main(String[] args) {
         ShowMouseSite frame = new ShowMouseSite();
-        frame.setTitle("Exercise16_8");
+        frame.setTitle("MouseSite");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 300);
-        frame.setLocationRelativeTo(null); // Center the frame
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }
@@ -23,8 +23,6 @@ class DisplayCoordinatePanelONE extends JPanel {
 
     public DisplayCoordinatePanelONE() {
         addMouseListener(new MouseAdapter() {
-            // When mouse is clicked, the mouse pointer location is
-            // captured in the point p.
             public void mouseClicked(MouseEvent e) {
                 p.x = e.getX();
                 p.y = e.getY();
