@@ -15,6 +15,5 @@ public class HashMapAddress {
         String adr = input.next();
 
         System.out.println("The capital of " +adr + " is " + hashMap.get("California"));
-
     }
 }

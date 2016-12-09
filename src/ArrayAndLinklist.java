@@ -28,12 +28,12 @@ public class ArrayAndLinklist {
         System.out.println("并集 "+list3);
 
 
-        List<String> set4 = new ArrayList<String>();
-        set4.addAll(list1);
-        List<String> set5 = new ArrayList<String>();
-        set5.addAll(list2);
-        set5.removeAll(set4);
-        System.out.println("差集 " +set5 );
+        List<String> list4 = new ArrayList<String>();
+        list4.addAll(list1);
+        List<String> list5 = new ArrayList<String>();
+        list5.addAll(list2);
+        list5.removeAll(list4);
+        System.out.println("差集 " +list5 );
 
         list2.retainAll(list1);
         System.out.println("交集 "+ list2);

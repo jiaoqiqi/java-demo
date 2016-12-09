@@ -5,7 +5,7 @@ public class BinarySearch{
         int low=fromIndex;
         int high=toIndex-1;
         while(low<=high){
-            int mid=(low+high)>>>1;
+            int mid=(low+high)/2;
             T midVal=a[mid];
             if(midVal.compareTo(value)<0)
                 low=mid+1;
