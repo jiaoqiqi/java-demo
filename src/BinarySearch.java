@@ -32,7 +32,6 @@ public class BinarySearch{
     public static void main(String[] args){
         Integer[] a={2,3,5,7,9,13,18};
         System.out.println(binarySearch(a,0,7,13));
-        System.out.println(binarySearch1(a,0,7,18));
     }
 }
 

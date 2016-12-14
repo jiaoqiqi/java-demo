@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 //22-4
-/**
- * Created by monster on 16-12-7.
- */
 public class ArrayAndLinklist {
     public static void main(String []args){
         List<String> list1 = new ArrayList<String>();
