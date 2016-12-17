@@ -1,14 +1,14 @@
 import java.util.*;
-public abstract class GeometricObject {
+public abstract class shape {
     private String color = "white";
     private boolean filled;
     private Date dateCreated;
 
-    protected GeometricObject(){
+    protected shape(){
         dateCreated = new Date();
     }
 
-    protected GeometricObject(String color,boolean filled){
+    protected shape(String color, boolean filled){
         dateCreated = new Date();
         this.color = color;
         this.filled = filled;

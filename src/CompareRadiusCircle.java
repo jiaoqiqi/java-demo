@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.Date;
 
 public class CompareRadiusCircle {
     Scanner in = new Scanner(System.in);
@@ -14,7 +13,7 @@ public class CompareRadiusCircle {
 }
 
 
-class Circle extends GeometricObject implements Comparable{
+class Circle extends shape implements Comparable{
     double radius =0;
     public Circle(){
     }

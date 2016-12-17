@@ -45,9 +45,9 @@ class RPentagon extends shape{
 
 }
 
-abstract class shape {// 抽象类
-
-    public abstract double getArea();
-
-    public abstract double getPerimeter();
-}
+//abstract class shape {// 抽象类
+//
+//    public abstract double getArea();
+//
+//    public abstract double getPerimeter();
+//}
