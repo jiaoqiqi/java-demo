@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Created by Snoopy on 2016/11/16.
- */
 public class SameString {
     public static void main(String []args){
         Scanner input = new Scanner(System.in);

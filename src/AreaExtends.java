@@ -51,3 +51,14 @@ class RPentagon extends shape{
 //
 //    public abstract double getPerimeter();
 //}
+
+//class Stock{
+//    String symbol="";
+//    String name="";
+//    double previousClosingPrice=0;
+//    double currentPrice=0;
+//    double getChangePercent(){
+//        return ((previousClosingPrice-currentPrice)/previousClosingPrice);
+//    }
+//
+//}

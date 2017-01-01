@@ -26,7 +26,7 @@ public class ScoreSearch {
         int s;
         for (s = 0; s < i; s++) {
             if (names[s].equals(findName)) {
-                System.out.println(scores[s]);
+                System.out.println(scores[s]*0.21);
                 break;
             }
         }
