@@ -14,6 +14,6 @@ public class HashMapAddress {
         Scanner input = new Scanner(System.in);
         String adr = input.next();
 
-        System.out.println("The capital of " +adr + " is " + hashMap.get("California"));
+        System.out.println("The capital of " +adr + " is " + hashMap.get(adr));
     }
 }

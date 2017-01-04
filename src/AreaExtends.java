@@ -1,7 +1,7 @@
 //从下列的抽象类shape类扩展出一个正五边形（regular pentagon）类RPentagon,
 // 这个类将正五边形的边长作为私有成员，类中包含初始化这个值的构造方法。
 
-//public abstract class shape {// 抽象类
+//public abstract class shapen {// 抽象类
 
 /// 抽象方法 求面积 / public abstract double getArea();
 
@@ -28,37 +28,28 @@ public class AreaExtends {
     }
 }
 
-class RPentagon extends shape{
+class RPentagon extends newShape {
 
     private double side;
 
     public RPentagon(double side) {
         this.side = side;
     }
+
     public double getArea() {
-        return (0.25)*Math.pow(side,2)*Math.sqrt(25+10*Math.sqrt(5));
+        return (0.25) * Math.pow(side, 2) * Math.sqrt(25 + 10 * Math.sqrt(5));
     }
 
     public double getPerimeter() {
-        return 5*side;
+        return 5 * side;
     }
 
 }
 
-//abstract class shape {// 抽象类
-//
-//    public abstract double getArea();
-//
-//    public abstract double getPerimeter();
-//}
+abstract class newShape {// 抽象类
 
-//class Stock{
-//    String symbol="";
-//    String name="";
-//    double previousClosingPrice=0;
-//    double currentPrice=0;
-//    double getChangePercent(){
-//        return ((previousClosingPrice-currentPrice)/previousClosingPrice);
-//    }
-//
-//}
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
+}
+
