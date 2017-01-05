@@ -1,43 +1,35 @@
+//import java.util.HashMap;
+//import java.util.Map;
 //import java.util.Scanner;
 //
-//public class ScoreSearch {
-//    public static void main(String[] args) {
+//public class ScoreSearch{
+//    public static void main(String []args){
 //        Scanner input = new Scanner(System.in);
-//        String[] names;
-//        int[] scores;
-//        scores = new int[100];
-//        names = new String[100];
-//        int i = 0;
+//        Map<String,String> hashMap = new HashMap<String,String>();
+//
+//        String name ;
+//        String tel ;
 //
 //
-//        for(int j = 0; j < 100; j ++) {
-//            names[i] = input.next();
-//
-//
-//            if (names[i].equals("noname")) {
-//                break;
-//            }
-//            scores[i] = input.nextInt();
-//            i++;
+//        name = input.next();
+//        while(!input.next().equals("noname")){
+//            tel = input.next();
+//            hashMap.put(name,tel);
+//            name = input.next();
 //        }
 //
-//
-//        String findName = input.next();
-//        int s;
-//        for (s = 0; s < i; s++) {
-//            if (names[s].equals(findName)) {
-//                System.out.println(scores[s]*0.21);
-//                break;
-//            }
+//        String find = input.next();
+//        String result = hashMap.get(find);
+//        if(result != null){
+//            System.out.println(hashMap.get(find));
 //        }
-//        if(s == i) {
+//        else{
 //            System.out.println("Not found");
 //        }
-//    }
 //
+//    }
 //}
 
-//
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,23 +38,22 @@ import java.util.Scanner;
 public class ScoreSearch{
     public static void main(String []args){
         Scanner input = new Scanner(System.in);
-        Map<String,String> hashMap = new HashMap<String,String>();
+        Map<String,Integer> hashMap = new HashMap<String,Integer>();
 
         String name ;
-        String tel ;
+        int tel ;
 
 
         name = input.next();
         while(!name.equals("noname")){
-            tel = input.next();
+            tel = input.nextInt();
             hashMap.put(name,tel);
             name = input.next();
         }
-
         String find = input.next();
-        String result = hashMap.get(find);
-        if(result != null){
-            System.out.println(hashMap.get(find));
+        Boolean result = hashMap.containsKey(find);
+        if(result ){
+            System.out.println(hashMap.get(find)*0.21);
         }
         else{
             System.out.println("Not found.");
@@ -70,3 +61,5 @@ public class ScoreSearch{
 
     }
 }
+
+

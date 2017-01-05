@@ -20,7 +20,9 @@ public class AreaExtends {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         RPentagon rPentagon = new RPentagon(input.nextDouble());
+
         DecimalFormat Format = new DecimalFormat();
         Format.setMaximumFractionDigits(4);
         System.out.println(Format.format(rPentagon.getArea()));
